@@ -1,112 +1,193 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Botsa Yaswanth | AWS Cloud Enthusiast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yashu's Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
-      background: url('0791730d-8e2c-4935-baa1-04afdbaad56a.png') no-repeat center center fixed;
-      background-size: cover;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
       color: #333;
+      line-height: 1.6;
     }
-    .overlay {
-      background-color: rgba(255, 255, 255, 0.9);
-      min-height: 100vh;
-    }
+
     header {
-      background-color: #232f3e;
+      background: #2c3e50;
       color: white;
-      padding: 20px 0;
+      padding: 40px 0;
       text-align: center;
     }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+    }
+
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
     nav a {
       color: white;
-      margin: 0 15px;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .skill-box, .project-box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .skill-box:hover, .project-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-box a {
+      color: #3498db;
       text-decoration: none;
       font-weight: bold;
     }
-    section {
-      padding: 30px;
-      max-width: 900px;
-      margin: 20px auto;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
     }
-    h2 {
-      color: #232f3e;
+
+    .contact-form button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+      margin-top: 40px;
     }
-    .contact-info p {
-      margin: 5px 0;
-    }
-    .project {
-      margin-top: 20px;
+
+    @media (max-width: 600px) {
+      .skill-box, .project-box {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <header>
-      <h1>Botsa Yaswanth</h1>
-      <p>AWS Cloud Enthusiast</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I want to be a cloud person — passionate about working with AWS Cloud and growing my skills in cloud infrastructure and services.</p>
-    </section>
+  <header>
+    <img src="pic.jpg" alt="Yashu's photo" />
+    <h1>Yashwanth Botsa</h1>
+    <p>Aspiring Developer | Cloud Enthusiast</p>
+  </header>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>AWS (EC2, S3, IAM)</li>
-        <li>Linux (Basics)</li>
-        <li>MySQL</li>
-      </ul>
-    </section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Static Website Hosting on AWS S3</h3>
-        <p><strong>Description:</strong> Hosted a static website using AWS S3. Configured bucket policies and IAM roles to manage access securely.</p>
-        <p><strong>Tech Used:</strong> AWS S3, IAM, HTML/CSS</p>
-        <p><strong>Key Skills:</strong> S3 bucket configuration, static website hosting, IAM policies</p>
-        <p><strong>GitHub:</strong> 
-        <a href="https://github.com/Yaswanthbotsa/aws-static-site" target="_blank">GitHub Repo</a></p>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Yashwanth Botsa, a passionate and self-motivated developer with a growing interest in web development and cloud technologies. I love building responsive web apps and exploring the power of AWS. I'm currently sharpening my skills and working on exciting projects to strengthen my portfolio.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-box">HTML5</div>
+      <div class="skill-box">CSS3</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">AWS (S3, EC2)</div>
+      <div class="skill-box">Git & GitHub</div>
+      <div class="skill-box">Python (Basic)</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-box">
+        <h3>AWS Static Site</h3>
+        <p>Deployed a fully static website using AWS S3 and hosted it with a custom domain.</p>
+        <a href="https://github.com/Yaswanthbotsa/aws-static-site" target="_blank">View on GitHub</a>
       </div>
-    </section>
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <p><strong>Degree:</strong> MVGR College Of Engineering</p>
-      <p><strong>University:</strong> JNTU Kakinada</p>
-      <p><strong>Year:</strong> 2020 - 2024</p>
-      <p><strong>CGPA:</strong> 6.79 / 10</p>
-    </section>
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Technology (B.Tech)</strong><br/>
+    Computer Science and Engineering<br/>
+    [MVGR College of Engineering], [2020-2024]</p>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact-info">
-        <p><strong>Phone:</strong> 8367259633</p>
-        <p><strong>Email:</strong> <a href="mailto:yaswanthyassu9726@gmail.com">yaswanthyassu9726@gmail.com</a></p>
-      </div>
-    </section>
-  </div>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" name="Botsa.Yaswanth" placeholder="Botsa Yaswanth" required />
+      <input type="email" name="email" placeholder="yaswanthyassu9726@gmail.com" required />
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Yashwanth Botsa. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
